@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.practica4listacompra.databinding.FragmentGalleryBinding;
+
 import com.example.practica4listacompra.databinding.FragmentHelpBinding;
 
 public class HelpFragment extends Fragment {
