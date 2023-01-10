@@ -1,4 +1,4 @@
-package com.example.practica4listacompra.ui.gallery;
+package com.example.practica4listacompra.ui.historic;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.practica4listacompra.databinding.FragmentGalleryBinding;
+import com.example.practica4listacompra.databinding.FragmentHistoricBinding;
 
-public class GalleryFragment extends Fragment {
+public class HistoricFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentHistoricBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        HistoricViewModel historicViewModel =
+                new ViewModelProvider(this).get(HistoricViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentHistoricBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textHistoric;
+        historicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
