@@ -1,16 +1,16 @@
-package com.example.practica4listacompra.ui.home;
+package com.example.practica4.ui.stockShop;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class StockShopViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public StockShopViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is Stock Store fragment");
     }
 
     public LiveData<String> getText() {

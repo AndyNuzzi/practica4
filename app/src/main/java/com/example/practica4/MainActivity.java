@@ -1,4 +1,4 @@
-package com.example.practica4listacompra;
+package com.example.practica4;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +14,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.practica4listacompra.databinding.ActivityMainBinding;
+import com.example.practica4.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

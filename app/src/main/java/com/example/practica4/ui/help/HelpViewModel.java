@@ -1,4 +1,4 @@
-package com.example.practica4listacompra.ui.help;
+package com.example.practica4.ui.help;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

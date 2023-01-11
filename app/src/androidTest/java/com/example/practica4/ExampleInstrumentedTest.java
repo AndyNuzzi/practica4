@@ -1,4 +1,4 @@
-package com.example.practica4listacompra;
+package com.example.practica4;
 
 import android.content.Context;
 

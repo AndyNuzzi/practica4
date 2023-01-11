@@ -1,4 +1,4 @@
-package com.example.practica4listacompra.ui.home;
+package com.example.practica4.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.practica4listacompra.databinding.FragmentHomeBinding;
+import com.example.practica4.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 

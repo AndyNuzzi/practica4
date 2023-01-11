@@ -1,4 +1,4 @@
-package com.example.practica4listacompra.ui.stockShop;
+package com.example.practica4.ui.stockShop;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.practica4listacompra.databinding.FragmentStockShopBinding;
+import com.example.practica4.databinding.FragmentStockShopBinding;
 
 
 public class StockShopFragment extends Fragment {

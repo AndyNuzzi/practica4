@@ -1,4 +1,4 @@
-package com.example.practica4listacompra.ui.help;
+package com.example.practica4.ui.help;
 
 import android.os.Bundle;
 
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.practica4listacompra.databinding.FragmentHelpBinding;
+import com.example.practica4.databinding.FragmentHelpBinding;
 
 public class HelpFragment extends Fragment {
 

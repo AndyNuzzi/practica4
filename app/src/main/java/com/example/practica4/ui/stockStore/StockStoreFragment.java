@@ -1,4 +1,4 @@
-package com.example.practica4listacompra.ui.stockStore;
+package com.example.practica4.ui.stockStore;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.practica4listacompra.databinding.FragmentStockStoreBinding;
+import com.example.practica4.databinding.FragmentStockStoreBinding;
 
 public class StockStoreFragment extends Fragment {
 
