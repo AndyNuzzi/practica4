@@ -7,14 +7,11 @@ public class Earing {
     private String description;
     private int imageResource;
 
-    public Earing(int id, String name, String description, int imageResource) {
-        this.id = id;
+    public Earing(String name, String description, int imageResource) {
         this.name = name;
         this.description = description;
         this.imageResource= imageResource;
     }
-
-    public int getId(){return id;}
 
     public String getName(){
         return name;

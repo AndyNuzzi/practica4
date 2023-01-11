@@ -27,20 +27,36 @@ public class DataLoader extends AppCompatActivity {
         BD.close();
     }
 
+    private static int getID(){
+        int id = 0;
+        for(int i = 1; i <= 10; i = i + 1){
+            id = i;
+        }
+
+        return id;
+    }
+
 
     public static Earing getEaringFromDB(){
         int imageResource=0;
+        Earing earing = new Earing("", "", imageResource);
+
+        int earID = getID();
 
         AdminSQLiteOpenHelper admin= new AdminSQLiteOpenHelper(context, "gestion", null, 1);
         SQLiteDatabase BD= admin.getWritableDatabase();
         Cursor earingRaw= BD.rawQuery
-                ("select id, name, description, imageResource from earings", null);
-        earingRaw.moveToFirst();
-        imageResource = Integer.parseInt(earingRaw.getString(3));
-        String description = earingRaw.getString(2);
-        int id = Integer.parseInt(earingRaw.getString(0));
+                ("select name, description, imageResource from earings where id=" + earID, null);
 
-        return new Earing(id, earingRaw.getString(1), description, imageResource);
+        if( earingRaw != null && earingRaw.moveToFirst() ) {
+            String name = earingRaw.getString(0);
+            String description = earingRaw.getString(1);
+            imageResource = Integer.parseInt(earingRaw.getString(2));
+
+            earing =  new Earing(name, description, imageResource);
+        }
+
+        return earing;
     }
 
     public void LoadEarings(){
