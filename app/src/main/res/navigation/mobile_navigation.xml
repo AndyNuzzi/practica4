@@ -12,10 +12,16 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.practica4listacompra.ui.historic.HistoricFragment"
-        android:label="@string/menu_historic"
-        tools:layout="@layout/fragment_historic" />
+        android:id="@+id/nav_stock_store"
+        android:name="com.example.practica4listacompra.ui.stockStore.StockStoreFragment"
+        android:label="@string/menu_stock_store"
+        tools:layout="@layout/fragment_stock_store" />
+
+    <fragment
+        android:id="@+id/nav_stock_shop"
+        android:name="com.example.practica4listacompra.ui.stockShop.StockShopFragment"
+        android:label="@string/menu_stock_shop"
+        tools:layout="@layout/fragment_stock_shop" />
 
     <fragment
         android:id="@+id/nav_help"

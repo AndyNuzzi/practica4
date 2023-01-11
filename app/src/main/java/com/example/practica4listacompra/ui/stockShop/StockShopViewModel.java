@@ -1,16 +1,16 @@
-package com.example.practica4listacompra.ui.historic;
+package com.example.practica4listacompra.ui.stockShop;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HistoricViewModel extends ViewModel {
+public class StockShopViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HistoricViewModel() {
+    public StockShopViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is Stock Store fragment");
     }
 
     public LiveData<String> getText() {

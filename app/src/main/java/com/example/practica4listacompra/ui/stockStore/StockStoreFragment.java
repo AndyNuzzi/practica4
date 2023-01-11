@@ -1,4 +1,4 @@
-package com.example.practica4listacompra.ui.historic;
+package com.example.practica4listacompra.ui.stockStore;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.practica4listacompra.databinding.FragmentHistoricBinding;
+import com.example.practica4listacompra.databinding.FragmentStockStoreBinding;
 
-public class HistoricFragment extends Fragment {
+public class StockStoreFragment extends Fragment {
 
-    private FragmentHistoricBinding binding;
+    private FragmentStockStoreBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HistoricViewModel historicViewModel =
-                new ViewModelProvider(this).get(HistoricViewModel.class);
+        StockStoreViewModel stockStoreViewModel =
+                new ViewModelProvider(this).get(StockStoreViewModel.class);
 
-        binding = FragmentHistoricBinding.inflate(inflater, container, false);
+        binding = FragmentStockStoreBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHistoric;
-        historicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textStockStore;
+        stockStoreViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

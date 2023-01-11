@@ -10,5 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_historic">Históricos</string>
     <string name="menu_help">Ayuda</string>
+    <string name="menu_stock_shop">Tiendas</string>
+    <string name="menu_stock_store">Almacén</string>
 
 </resources>
