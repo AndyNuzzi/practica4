@@ -12,5 +12,7 @@
     <string name="menu_help">Ayuda</string>
     <string name="menu_stock_shop">Tiendas</string>
     <string name="menu_stock_store">Almacén</string>
+    <string name="pendiente1">pendiente1</string>
+    <string name="description_pendiente1">descripcion pendiente 1</string>
 
 </resources>
