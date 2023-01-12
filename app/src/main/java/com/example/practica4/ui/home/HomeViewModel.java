@@ -13,7 +13,10 @@ import com.example.practica4.Earing;
 
 public class HomeViewModel extends ViewModel {
 
+    //datos que hacen falta añadir
     private MutableLiveData<String> mName, mDesc; // mImg;
+
+    //variable que accede a la bbdd
     private Earing earing = DataLoader.getEaringFromDB();
 
 

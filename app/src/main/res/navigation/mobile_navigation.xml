@@ -12,18 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_stock_store"
-        android:name="com.example.practica4.ui.stockStore.StockStoreFragment"
-        android:label="@string/menu_stock_store"
-        tools:layout="@layout/fragment_stock_store" />
-
-    <fragment
-        android:id="@+id/nav_stock_shop"
-        android:name="com.example.practica4.ui.stockShop.StockShopFragment"
-        android:label="@string/menu_stock_shop"
-        tools:layout="@layout/fragment_stock_shop" />
-
-    <fragment
         android:id="@+id/nav_help"
         android:name="com.example.practica4.ui.help.HelpFragment"
         android:label="@string/menu_help"

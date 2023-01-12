@@ -13,11 +13,11 @@ import java.util.Set;
 public class DataLoader extends AppCompatActivity {
 
     private static Context context;
-    private static Set<Integer> earings;
+    private static Set<Integer> candidates;
 
     public DataLoader(Context context){
         this.context= context;
-        this.earings= new HashSet<>();
+        this.candidates= new HashSet<>();
     }
 
     public void deleteInfo(){
@@ -29,13 +29,17 @@ public class DataLoader extends AppCompatActivity {
 
     private static int getID(){
         int id = 0;
-        for(int i = 1; i <= 10; i = i + 1){
-            id = i;
-        }
+        int i = 0;
+
+        do {
+            id = i + 1;
+
+        } while (candidates.contains(id));
+
+        candidates.add(id);
 
         return id;
     }
-
 
     public static Earing getEaringFromDB(){
         int imageResource=0;
@@ -64,7 +68,6 @@ public class DataLoader extends AppCompatActivity {
         SQLiteDatabase BD= admin.getWritableDatabase();
 
         ContentValues earings= new ContentValues();
-        ContentValues answer= new ContentValues();
 
         earings.put("id", 1);
         earings.put("name", context.getString(R.string.pendiente1));

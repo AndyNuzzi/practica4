@@ -8,15 +8,6 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_stock_store"
-            android:icon="@drawable/ic_menu_stock_store"
-            android:title="@string/menu_stock_store" />
-
-        <item
-            android:id="@+id/nav_stock_shop"
-            android:icon="@drawable/ic_menu_stock_shop"
-            android:title="@string/menu_stock_shop" />
 
         <item
             android:id="@+id/nav_help"
